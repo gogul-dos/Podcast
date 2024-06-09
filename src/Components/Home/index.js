@@ -8,6 +8,7 @@ import { IoIosLogOut } from "react-icons/io";
 import "./index.css";
 import Popup from "../Popup";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import Login from "../Login";
 
 class Home extends Component {
   state = { projectAvailable: "loader", showPopUp: false, previousProject: [] };
@@ -23,9 +24,16 @@ class Home extends Component {
   }
 
   logoutButtonClicked = () => {
+    const previousProject = Cookies.get("projects");
     const { history } = this.props;
     const { replace } = history;
-    replace("/login");
+    if (previousProject) {
+      Cookies.remove("projects");
+
+      replace("/login");
+    } else {
+      replace("/login");
+    }
   };
 
   togglePopup = () => {
