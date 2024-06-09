@@ -1,0 +1,93 @@
+.home-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-logo-container {
+  display: flex;
+  align-items: center;
+}
+.home-imgs {
+  height: 50px;
+}
+.new-project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.new-project-image {
+  height: 250px;
+}
+.new-project-button {
+  background-color: black;
+  color: wheat;
+  height: 50px;
+  width: 35%;
+  border-radius: 10px;
+  cursor: pointer;
+  border-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+button {
+  cursor: pointer !important;
+}
+.log-out-button {
+  background-color: transparent;
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+.project-availability-container {
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.project-avail-navbar {
+  display: flex;
+  padding-top: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.projects-list-item {
+  height: 100px;
+  width: 250px;
+  text-decoration: none;
+  background-color: beige;
+  border-width: 1px;
+  border-style: solid;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 10px gray, -5px -5px 5px blanchedalmond;
+}
+.link-item {
+  text-decoration: none;
+  color: black;
+  gap: 25px;
+}
+.unordered-list-projects {
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 75px;
+  display: flex;
+  align-items: center;
+}
